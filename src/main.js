@@ -10,30 +10,15 @@ var height = window.innerHeight;
 
 canvas.width = width;
 canvas.height = height;
-
+// Basic Fixes Done
 ctx.fillStyle = 'black';
 ctx.fillRect(0, 0, width, height);
 
-class Sprite {
-	constructor(x, y, width, height, color) {
-		this.x = x;
-		this.y = y;
-		this.width = width;
-		this.height = height;
-	}
 
-	draw() {
-		ctx.fillStyle = 'this.color';
-		ctx.fillRect(this.x, this.y, this.width, this.height);
-	}
-}
+ctx.fillStyle = 'red';
+ctx.fillRect(30, 30, 100, 100);
 
-
-
-var player = new Sprite(20, 20, 50, 50, 'red');
-player.draw();
-
-console.log(player)
+console.log(update)
 
 function update() {
 	window.requestAnimationFrame(update);
